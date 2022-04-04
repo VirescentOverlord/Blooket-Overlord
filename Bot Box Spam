@@ -1,0 +1,7 @@
+//spam click the bookmarklet after you paste it into your bookmark bar to get the best results
+
+javascript:document.getElementsByClassName('styles__mysteryBoxIcon___3jSx1-camelCase')[0].click();
+document.getElementsByClassName('styles__button___22rMT-camelCase styles__hoverBlue___2zYb_-camelCase')[0].click();
+setTimeout(() => {
+  document.getElementsByClassName('styles__mysteryBoxContainerBefore___gjSEV-camelCase')[0].click()
+}, 500);
