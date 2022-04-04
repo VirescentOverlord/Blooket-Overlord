@@ -1,4 +1,5 @@
-//spam click the bookmarklet after you paste it into your bookmark bar to get the best results. I am currently having trouble using this method on other boxes so please wait until I have found a better method.
+//spam click the bookmarklet after you paste it into your bookmark bar to get the best results. 
+//I am currently having trouble using this method on other boxes so please wait until I have found a better method.
 
 javascript:document.getElementsByClassName('styles__boxTokenText___1xH9S-camelCase')[0].click();
 document.getElementsByClassName('styles__button___22rMT-camelCase styles__hoverBlue___2zYb_-camelCase')[0].click();
