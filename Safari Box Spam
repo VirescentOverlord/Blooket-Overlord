@@ -1,8 +1,4 @@
 //spam click the bookmarklet after you paste it into your bookmark bar to get the best results. 
 //I am currently having trouble using this method on other boxes so please wait until I have found a better method.
 
-javascript:document.getElementsByClassName('styles__boxTokenText___1xH9S-camelCase')[0].click();
-document.getElementsByClassName('styles__button___22rMT-camelCase styles__hoverBlue___2zYb_-camelCase')[0].click();
-setTimeout(() => {
-  document.getElementsByClassName('styles__mysteryBoxContainerBefore___gjSEV-camelCase')[0].click()
-}, 500);
+javascript:'use%20strict';void%20function(a){var%20b=function(){javascript:document.getElementsByClassName(%22styles__boxTokenText___1xH9S-camelCase%22)[0].click();document.getElementsByClassName(%22styles__button___22rMT-camelCase%20styles__hoverBlue___2zYb_-camelCase%22)[0].click(),setTimeout(function(){document.getElementsByClassName(%22styles__mysteryBoxContainerBefore___gjSEV-camelCase%22)[0].click()},500)};if(a%26%26a.fn%26%261.7%3C=parseFloat(a.fn.jquery))return%20void%20load(a);var%20c=document.createElement(%22script%22);c.src=%22https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js%22,c.onload=c.onreadystatechange=function(){var%20a=this.readyState;a%26%26%22loaded%22!==a%26%26%22complete%22!==a||b(jQuery.noConflict())},document.getElementsByTagName(%22head%22)[0].appendChild(c)}(window.jQuery);
