@@ -1,6 +1,48 @@
-javascript:document.getElementsByClassName("styles__boxHeader___PaH1G-camelCase")[0].click();
-document.getElementsByClassName("styles__button___22rMT-camelCase styles__hoverBlue___2zYb_-camelCase")[0].click();
-setTimeout(() => {
-  document.getElementsByClassName("styles__mysteryBoxContainerBefore___gjSEV-camelCase")[0].click();
-}, 300);
-//spam click the bookmarklet to get the best results. 
+var time = 1;
+var ClickElement = document.createElement("style");
+ClickElement.innerHTML = "*{cursor: pointer;}";
+document.body.appendChild(ClickElement);
+
+function addClicker(c) {
+  if (!c.isTrusted) {
+    return;
+  }
+  if (c.target.classList.contains("auto-clicker-target")) {
+    c.target.classList.remove("auto-clicker-target");
+  } else {
+    c.target.classList.add("auto-clicker-target");
+  }
+  document.body.removeChild(ClickElement);
+  document.body.removeEventListener("click", addClicker);
+  c.preventDefault();
+  autoClick(c.target);
+}
+
+function autoClick(elements) {
+  if (elements.classList.contains("auto-clicker-target")) {
+    elements.click();
+    setTimeout(function() {
+      autoClick(elements);
+    }, time);
+  }
+}
+document.body.addEventListener("click", addClicker, 0);
+var menu = document.createElement('div');
+menu.style.background = 'black';
+menu.style.textAlign = 'center';
+menu.style.position = 'fixed';
+menu.style.left = '50%';
+menu.style.transform = 'translateX(-50%)';
+menu.style.border = '1px solid magenta';
+menu.style.padding = '1vmin';
+menu.style.borderRadius = '1vmin';
+menu.style.zIndex = '9999';
+menu.textContent += "ㅤCLICK MEㅤ";
+menu.style.color = 'magenta';
+menu.style.boxShadow = "7px 7px 7px black";
+menu.onclick = function() {
+  document.getElementsByClassName("styles__boxHeader___PaH1G-camelCase")[0].click();
+  document.getElementsByClassName("styles__button___22rMT-camelCase styles__hoverBlue___2zYb_-camelCase")[0].click();
+  setTimeout(() => {
+    document.getElementsByClassName("styles__mysteryBoxContainerBefore___gjSEV-camelCase")[0].click();
+      document.body.appendChild(menu);
