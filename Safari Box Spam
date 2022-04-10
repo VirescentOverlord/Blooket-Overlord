@@ -41,8 +41,9 @@ menu.textContent += "ㅤCLICK MEㅤ";
 menu.style.color = 'magenta';
 menu.style.boxShadow = "7px 7px 7px black";
 menu.onclick = function() {
-  document.getElementsByClassName("styles__boxHeader___PaH1G-camelCase")[0].click();
-  document.getElementsByClassName("styles__button___22rMT-camelCase styles__hoverBlue___2zYb_-camelCase")[0].click();
-  setTimeout(() => {
-    document.getElementsByClassName("styles__mysteryBoxContainerBefore___gjSEV-camelCase")[0].click();}, 300);
-      document.body.appendChild(menu);
+    document.getElementsByClassName("styles__boxHeader___PaH1G-camelCase")[0].click();
+    document.getElementsByClassName("styles__button___22rMT-camelCase styles__hoverBlue___2zYb_-camelCase")[0].click();
+    setTimeout(() => {
+      document.getElementsByClassName("styles__mysteryBoxContainerBefore___gjSEV-camelCase")[0].click()
+    }, 300)};
+    document.body.appendChild(menu);
