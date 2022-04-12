@@ -1,3 +1,4 @@
+console.log('If the page refreshes after click you probably can not afford another box or this has been patched');
  var time = 1;
  var ClickElement = document.createElement("style");
  ClickElement.innerHTML = "*{cursor: pointer;}";
@@ -33,6 +34,9 @@
  }
  var four = 'Ove';
  document.body.addEventListener("click", addClicker, 0);
+ window.onerror = function() {
+   location.reload();
+ }
  var menu = document.createElement('div');
  menu.style.background = 'black';
  menu.style.textAlign = 'center';
@@ -52,6 +56,7 @@
    document.getElementsByClassName("styles__boxHeader___PaH1G-camelCase")[0].click();
    document.getElementsByClassName("styles__button___22rMT-camelCase styles__hoverBlue___2zYb_-camelCase")[0].click();
    setTimeout(() => {
+
      document.getElementsByClassName("styles__mysteryBoxContainerBefore___gjSEV-camelCase")[0].click()
    }, 300);
  };
