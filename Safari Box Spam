@@ -1,70 +1,86 @@
-console.log('If the page refreshes after click you probably can not afford another box or this has been patched');
- var time = 1;
- var ClickElement = document.createElement("style");
- ClickElement.innerHTML = "*{cursor: pointer;}";
- document.body.appendChild(ClickElement);
- var two = 'y Vire';
- var one = 'Mad';
- var five = 'scent';
- var six = 'd';
+var time = 1;
+var ClickElement = document.createElement("style");
+ClickElement.innerHTML = "*{cursor: pointer;}";
+document.body.appendChild(ClickElement);
+var two = 'y Vire';
+var one = 'Mad';
+var five = 'scent';
+var six = 'd';
 
- function addClicker(c) {
-   if (!c.isTrusted) {
-     return;
-   }
-   if (c.target.classList.contains("auto-clicker-target")) {
-     c.target.classList.remove("auto-clicker-target");
-   } else {
-     c.target.classList.add("auto-clicker-target");
-   }
-   document.body.removeChild(ClickElement);
-   document.body.removeEventListener("click", addClicker);
-   c.preventDefault();
-   autoClick(c.target);
- }
- var three = 'e B';
+function addClicker(c) {
+  if (!c.isTrusted) {
+    return;
+  }
+  if (c.target.classList.contains("auto-clicker-target")) {
+    c.target.classList.remove("auto-clicker-target");
+  } else {
+    c.target.classList.add("auto-clicker-target");
+  }
+  document.body.removeChild(ClickElement);
+  document.body.removeEventListener("click", addClicker);
+  c.preventDefault();
+  autoClick(c.target);
+}
+var three = 'e B';
 
- function autoClick(elements) {
-   if (elements.classList.contains("auto-clicker-target")) {
-     elements.click();
-     setTimeout(function() {
-       autoClick(elements);
-     }, time);
-   }
- }
- var four = 'Ove';
- document.body.addEventListener("click", addClicker, 0);
- window.onerror = function() {
-   location.reload();
- }
- var menu = document.createElement('div');
- menu.style.background = 'black';
- menu.style.textAlign = 'center';
- menu.style.position = 'fixed';
- menu.style.left = '50%';
- menu.style.transform = 'translateX(-50%)';
- menu.style.border = '1px solid magenta';
- var seven = 'rlor';
- menu.style.padding = '1vmin';
- menu.style.borderRadius = '1vmin';
- menu.style.zIndex = '9999';
- menu.textContent += "ㅤCLICK MEㅤ";
- menu.style.color = 'magenta';
- menu.style.boxShadow = "7px 7px 7px black";
- menu.onclick = function() {
-   menu.style.visibility = 'hidden';
-   document.getElementsByClassName("styles__boxHeader___PaH1G-camelCase")[0].click();
-   document.getElementsByClassName("styles__button___22rMT-camelCase styles__hoverBlue___2zYb_-camelCase")[0].click();
-   setTimeout(() => {
+function autoClick(elements) {
+  if (elements.classList.contains("auto-clicker-target")) {
+    elements.click();
+    setTimeout(function() {
+      autoClick(elements);
+    }, time);
+  }
+}
+var four = 'Ove';
+document.body.addEventListener("click", addClicker, 0);
+window.onerror = function() {
+    var err = document.createElement('div');
+    err.style.background = 'black';
+    err.style.textAlign = 'center';
+    err.style.position = 'fixed';
+    err.style.left = '50%';
+    err.style.top = '25%';
+    err.style.width = '50%';
+    err.style.height = '50%'
+    err.style.transform = 'translateX(-50%)';
+    err.style.border = '1px solid magenta';
+    err.style.padding = '1vmin';
+    err.style.borderRadius = '1vmin';
+    err.style.zIndex = '9999';
+    err.textContent += "An Error Has Occured, You May Be Out Of Tokens. Blooket May Have Also Patched This Method Or The Script Is Just Out-Dated. I Reccomend Going To My Github: VirescentOverlord to see if the script is updated. Refresh The Page";
+    err.style.color = 'magenta';
+    document.body.appendChild(err);
+    setTimeout(() => {
+      err.style.visibility = "hidden";
+    }, 10000);}
+    var menu = document.createElement('div');
+    menu.style.background = 'black';
+    menu.style.textAlign = 'center';
+    menu.style.position = 'fixed';
+    menu.style.left = '50%';
+    menu.style.transform = 'translateX(-50%)';
+    menu.style.border = '1px solid magenta';
+    var seven = 'rlor';
+    menu.style.padding = '1vmin';
+    menu.style.borderRadius = '1vmin';
+    menu.style.zIndex = '9999';
+    menu.textContent += "ㅤCLICK MEㅤ";
+    menu.style.color = 'magenta';
+    menu.style.boxShadow = "7px 7px 7px black";
+    menu.onclick = function() {
+      menu.style.visibility = 'hidden';
+      document.getElementsByClassName("styles__boxHeader___PaH1G-camelCase")[0].click();
+      document.getElementsByClassName("styles__button___22rMT-camelCase styles__hoverBlue___2zYb_-camelCase")[0].click();
+      setTimeout(() => {
 
-     document.getElementsByClassName("styles__mysteryBoxContainerBefore___gjSEV-camelCase")[0].click()
-   }, 300);
- };
- document.body.appendChild(menu);
- var o187g_ = one + three;
- var _ol2j8 = o187g_ + two;
- var nOS29 = _ol2j8 + five;
- var Tun65_ = nOS29 + four;
- var __con7e = Tun65_ + seven;
- var uIvd37_ = __con7e + six;
- console.log(uIvd37_);
+        document.getElementsByClassName("styles__mysteryBoxContainerBefore___gjSEV-camelCase")[0].click()
+      }, 300);
+    };
+    document.body.appendChild(menu);
+    var o187g_ = one + three;
+    var _ol2j8 = o187g_ + two;
+    var nOS29 = _ol2j8 + five;
+    var Tun65_ = nOS29 + four;
+    var __con7e = Tun65_ + seven;
+    var uIvd37_ = __con7e + six;
+    console.log(uIvd37_);
